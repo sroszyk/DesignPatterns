@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Builder.Example
+﻿namespace DesignPatterns.Builder.Example
 {
     internal class Director
     {
@@ -17,7 +11,7 @@ namespace DesignPatterns.Builder.Example
 
         public void Make(string type)
         {
-            if(type == "simple")
+            if (type == "simple")
             {
                 builder.BuildStepA();
             }

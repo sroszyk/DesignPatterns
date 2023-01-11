@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Bridge.Example
+﻿namespace DesignPatterns.Bridge.Example
 {
     internal class Client
     {
@@ -14,7 +8,7 @@ namespace DesignPatterns.Bridge.Example
 
             string selection = Console.ReadLine();
 
-            if(selection == "1")
+            if (selection == "1")
             {
                 implementation = new Implementation1();
             }

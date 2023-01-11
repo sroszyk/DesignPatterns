@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Iterator.Example
+﻿namespace DesignPatterns.Iterator.Example
 {
     internal class IterableCollection : IIterableCollection
     {
@@ -16,11 +10,11 @@ namespace DesignPatterns.Iterator.Example
 
         public int GetValue(int idx)
         {
-            if(idx > collection.Length - 1)
+            if (idx > collection.Length - 1)
             {
                 return -1;
             }
-            
+
             return collection[idx];
         }
     }

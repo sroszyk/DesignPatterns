@@ -8,7 +8,7 @@
 
             string selection = Console.ReadLine();
 
-            if(selection == "A")
+            if (selection == "A")
             {
                 creator = new CreatorA();
             }

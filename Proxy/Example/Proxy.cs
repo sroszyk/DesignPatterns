@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Proxy.Example
+﻿namespace DesignPatterns.Proxy.Example
 {
-    internal class Proxy: IServiceInterface
+    internal class Proxy : IServiceInterface
     {
         private readonly IServiceInterface service;
 

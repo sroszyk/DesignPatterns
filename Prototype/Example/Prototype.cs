@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Prototype.Example
+﻿namespace DesignPatterns.Prototype.Example
 {
-    internal class Prototype: IPrototype
+    internal class Prototype : IPrototype
     {
         private int secretValue = 50;
 

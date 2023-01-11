@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Prototype.Example.OneFile
+﻿namespace DesignPatterns.Prototype.Example.OneFile
 {
     internal interface IPrototype
     {

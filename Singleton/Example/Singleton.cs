@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Singleton.Example
+﻿namespace DesignPatterns.Singleton.Example
 {
     internal class Singleton
     {
@@ -18,10 +12,10 @@ namespace DesignPatterns.Singleton.Example
 
         public static Singleton GetInstance()
         {
-            if(instance == null)
+            if (instance == null)
             {
                 instance = new Singleton();
-            } 
+            }
 
             return instance;
         }
