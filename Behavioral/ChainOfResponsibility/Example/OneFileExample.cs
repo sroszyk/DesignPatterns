@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.ChainOfResponsibility.ONeFile
+﻿namespace DesignPatterns.ChainOfResponsibility.Example.ONeFile
 {
     internal interface IHandler
     {

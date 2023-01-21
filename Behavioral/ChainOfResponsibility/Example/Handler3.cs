@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.ChainOfResponsibility
+﻿namespace DesignPatterns.ChainOfResponsibility.Example
 {
     internal class Handler3 : BaseHandler
     {
