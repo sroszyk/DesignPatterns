@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.FluentInterface
+﻿namespace DesignPatterns.FluentInterface.Example
 {
     internal class Sample
     {
