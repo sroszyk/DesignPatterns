@@ -5,23 +5,31 @@
         IPrototype Clone();
     }
 
+    public class Test123
+    {
+
+    }
+
     internal class Prototype : IPrototype
     {
         private int secretValue = 50;
 
         private string anotherSecretValue = "Test";
 
+        private Test123 test123;
+
         public Prototype()
         {
         }
 
-        Prototype(Prototype prototype)
+        protected Prototype(Prototype prototype)
         {
             secretValue = prototype.secretValue;
             anotherSecretValue = prototype.anotherSecretValue;
+            test123 = prototype.test123;
         }
 
-        public IPrototype Clone()
+        public virtual IPrototype Clone()
         {
             return new Prototype(this);
         }
@@ -40,6 +48,22 @@
         {
             Console.WriteLine(secretValue.ToString());
             Console.WriteLine(anotherSecretValue);
+        }
+    }
+
+    internal class SubPrototype: Prototype
+    {
+        public SubPrototype()
+        {
+        }
+
+        protected SubPrototype(SubPrototype subPrototype): base(subPrototype)
+        {
+        }
+
+        public override IPrototype Clone()
+        {
+            return new SubPrototype(this);
         }
     }
 }
